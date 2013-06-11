@@ -1,4 +1,12 @@
 OauthPractice::Application.routes.draw do
+  resources :authentications
+
+  devise_for :users, path_names: { sign_in: "login", sign_out: "logout" },
+    controllers: { omniauth_callbacks: "authentications", 
+      registrations: "registrations" }
+
+  root to: "authentications#home"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

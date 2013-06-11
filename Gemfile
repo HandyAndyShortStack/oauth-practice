@@ -36,3 +36,15 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'pry-rails'
+
+gem 'devise'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+gem 'twitter'
+gem 'fb_graph'
+
+gem 'nifty-generators'
+
+gem "mocha", :group => :test
